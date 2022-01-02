@@ -193,7 +193,7 @@ export class Settings {
 
     _getGameWorldRolltables() {
 
-        let gameWorldRolltableCompendiums = game.packs.filter((pack) => pack.metadata.entity === "RollTable");        
+        let gameWorldRolltableCompendiums = game.packs.filter((pack) => pack.metadata.documentName === "RollTable");        
         let gameWorldTables = game.tables.contents.map(table => ({ [table.name]: table.name }));
 
         for (let rolltableCompendium of gameWorldRolltableCompendiums) {
